@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+    <meta name="author" content="Jacob Wickline">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title for the website-->
+    <title> Weather App </title>
+
+    <!--Linking the CSS code to the index-->
+    <link rel='stylesheet' href='styles/weather.css'/>
+
+    <!--Adding JavaScript to the website-->
+    <script src="scripts/weather_script.js" defer> </script>
+
+    <!--Font Style for website-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Kit for Logos-->
+    <script src="https://kit.fontawesome.com/85a53d4682.js" crossorigin="anonymous"></script>
+
+    <!--Adding Icon to HTML Title-->
+    <link rel="icon" href="images/weather.png">
+
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search_bar" placeholder="Search">
+        <button><i class="fa-solid fa-magnifying-glass" ></i></button>
+      </div>
+      <div class="weather loading">
+        <h2 class = "city">Weather in Frankford</h2>
+        <div class="temp">69°F</div>
+        <div class="flex">
+          <img src="" alt="" class="icon"/>
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">50%</div>
+        <div class="wind">Wind Speed: 3.5 mph</div>
+      </div>
+    </div>
+  </body>
+</html>
