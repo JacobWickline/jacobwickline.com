@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+    <meta name="author" content="Jacob Wickline">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title for the website-->
+    <title> The View Remastered </title>
+
+    <!--Linking the CSS code to the index-->
+    <link rel='stylesheet' href='styles/style.css'/>
+
+    <!--Adding Icon to HTML Title-->
+    <link rel="icon" href="images/jwlogo_trans.png">
+
+    <!--Font Style for website-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Kit for Logos-->
+    <script src="https://kit.fontawesome.com/85a53d4682.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/jwlogo_trans.png" alt="logo">
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+       </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav_item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav_item"><a href="index.html#knowledge" class="nav__link">Knowledge & Skills</a></li>
+          <li class="nav_item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav_item"><a href="index.html#projects" class="nav__link">Sample Projects</a></li>
+        </ul>
+      </header>
+
+      <!--Project Info-->
+      <section class="intro">
+        <h1 class="section__title section__title--intro">
+          Remastered<strong> Website </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Seriously Improved </p>
+        <img src="images/theview.jpg" alt="The View" class="intro__img">
+      </section>
+
+      <div class="portfolio-item-individual">
+        <p>
+          This project was a complete remaster of The View's Bed and Breakfast Website.
+          I worked with three other people to update the website's design to a more appealing format
+          and better color scheme.
+        </p>
+        <img src="images/theview3.0.png">
+        <p>
+          The original website can be found at theviewbb.com
+        </p>
+        <p class="techno-used">
+          Technologies Used:
+          </p>
+        <p>
+          HTML, CSS, JavaScript, and Google Maps API
+          </p>
+        <a href="https://github.com/JacobWickline/The-View-Website-Remastered" class="btn">Github</a>
+        <a href="theview_index.html" class="btn">Live Demo</a>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer">
+        <a href="mailto:jrwickline625@gmail.com" class="footer-link">Email: jrwickline625@gmail.com</a>
+        <ul class="social-list">
+          <!--Social Networking Links-->
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://www.linkedin.com/in/jacob-wickline-08a87b162">
+            <i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://github.com/JacobWickline"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://twitter.com/jacobrwickline"><i class="fa-brands fa-twitter-square"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://www.instagram.com/jacobrwickline/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+      <!--Adding JavaScript to the website-->
+      <script src="scripts/hamburger.js"> </script>
+
+  </body>
+</html>

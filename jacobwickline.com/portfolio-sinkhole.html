@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+    <meta name="author" content="Jacob Wickline">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title for the website-->
+    <title> DNS Sinkhole </title>
+
+    <!--Linking the CSS code to the index-->
+    <link rel='stylesheet' href='styles/style.css'/>
+
+    <!--Adding Icon to HTML Title-->
+    <link rel="icon" href="images/jwlogo_trans.png">
+
+    <!--Font Style for website-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Kit for Logos-->
+    <script src="https://kit.fontawesome.com/85a53d4682.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/jwlogo_trans.png" alt="logo">
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+       </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav_item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav_item"><a href="index.html#knowledge" class="nav__link">Knowledge & Skills</a></li>
+          <li class="nav_item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav_item"><a href="index.html#projects" class="nav__link">Sample Projects</a></li>
+        </ul>
+      </header>
+
+      <!--Project Info-->
+      <section class="intro">
+        <h1 class="section__title section__title--intro">
+          Raspberry Pi<strong> DNS Sinkhole </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Goodbye Ads! </p>
+        <img src="images/raspberry.png" alt="DNS Server" class="intro__img">
+      </section>
+
+      <div class="portfolio-item-individual">
+        <p>
+          This is a DNS Sinkhole that is targeted towards ads. This requires "dnsmasq" and the pip package "dns-blackhole." dnsmasq is used to initially setup the DNS Server
+           and is needed to be loaded with the configuration file. dns-blackhole is used to load the DNS Server with over 790,000 ad domains.
+        </p>
+        <img src="images/sinkhole_gui.jpg">
+        <p>
+          This will give the user the ability to block the majority of the ads from the start. The "main.py" file is used to control the DNS Server. It gives the user the ability to add domains to the DNS Server's blacklist and whitelist. It will also give the user
+           the ability to turn the DNS Server on or off. This project needs to either be loaded on a Linux machine or a Raspberry Pi.
+        </p>
+        <p class="techno-used">
+          Technologies Used:
+          </p>
+        <p>
+          Python, PyQt5, dnsmasq, and Raspberry Pi
+          </p>
+        <a href="https://github.com/JacobWickline/DNS-Sinkhole" class="btn">Github</a>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer">
+        <a href="mailto:jrwickline625@gmail.com" class="footer-link">Email: jrwickline625@gmail.com</a>
+        <ul class="social-list">
+          <!--Social Networking Links-->
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://www.linkedin.com/in/jacob-wickline-08a87b162">
+            <i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://github.com/JacobWickline"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://twitter.com/jacobrwickline"><i class="fa-brands fa-twitter-square"></i></a>
+          </li>
+          <li class="social-list__item"><a class="social-list__link"
+            href="https://www.instagram.com/jacobrwickline/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </footer>
+
+      <!--Adding JavaScript to the website-->
+      <script src="scripts/hamburger.js"> </script>
+
+  </body>
+</html>

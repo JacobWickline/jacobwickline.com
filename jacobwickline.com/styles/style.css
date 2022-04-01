@@ -447,3 +447,9 @@ position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.techno-used{
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  margin-bottom: -1em;
+}

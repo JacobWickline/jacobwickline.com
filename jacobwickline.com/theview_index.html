@@ -1,0 +1,133 @@
+<!--
+Jacob Wickline - edited by Dalton Walker and Kaylan Sheally
+10/31/20
+CS 351
+Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jacob Wickline">
+
+    <!--Title for the website-->
+    <title>The View B&B Inn</title>
+
+    <!--Linking the CSS code to the index-->
+    <link rel='stylesheet' href='styles/reset.css'/>
+    <link rel='stylesheet' href='styles/style_theview.css'/>
+
+    <!--CSS file required for map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!--Adding JavaScript to the website-->
+    <script src = "scripts/imageSlideShow.js"> </script>
+    <script src = "scripts/map.js"> </script>
+
+    <!--Javascript file required for map-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!--Font Style for website-->
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Main Header for the website-->
+    <div class="header">
+      <!--Adding the logo to the header-->
+      <img src="images/The View Logo.jpg" alt="logo">
+      <h1>The View Bed and Breakfast Inn</h1>
+    </div>
+
+    <!--Adding Navigation Bar-->
+    <ul>
+      <li><a href="file:///C:/Users/jrwic/Desktop/CS%20351/CS-351-Final-Project/The%20View%20B&B/index.html">Home</a></li>
+
+      <!--Adding Dropdown Menu For Rooms-->
+      <li class="roomDropdown">
+        <a href="javascript:void(0)" class="dropdown">Rooms</a>
+        <div class="dropdownContent">
+          <a href="oakroom.asp">The Oak Room</a>
+          <a href="mapleroom.asp">The Maple Room</a>
+          <a href="cherryroom.asp">The Cherry Room</a>
+        </div>
+      </li>
+
+      <li><a href="reservations.asp">Reservations</a></li>
+      <li><a href="attractions.asp">Attractions</a></li>
+      <li><a href="file:///C:/Users/jrwic/Desktop/CS%20351/CS-351-Final-Project/The%20View%20B&B/AboutUs-WebDev.html">About</a></li>
+      <li><a href="contact.asp">Contact Us</a></li>
+    </ul>
+
+    <!--This is the container for the slides-->
+    <div class="slideshow-container">
+
+      <!--This adds in the slides at full width-->
+      <div class="slides fade" id="firstSlide">
+          <img src="images/Entrance Resized.jpg" style="width:100%">
+      </div>
+      <div class="slides fade">
+        <img src="images/View Resized.jpg" style="width:100%">
+      </div>
+      <div class="slides fade">
+        <img src="images/Maple Bedroom Resized.jpg" style="width:100%">
+      </div>
+      <div class="slides fade">
+        <img src="images/Maple Bathroom Resized.jpg" style="width:100%">
+      </div>
+
+      <!--This is the next and previous buttons-->
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!--The <br> is used for a line break-->
+    <br>
+
+    <!--This adds in the dots at the bottom of the slideshow-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!--This is for adding columns into the website-->
+    <div class="row">
+      <div class="column">
+          <h2> Information </h2>
+          <p> Come and relax in the mountains of southern West Virginia. Experience the atmosphere of small town Appalachian hospitality, and take time to reflect on the beauty of God's earth</p>
+          <p> The View B&B is the newly remodeled home of Elizabeth Muldoon and her family. It is located on seven acres of land at the edge of small town Athens, WV, only minutes from Pipestem State Park, Winterplace ski resort and Concord University. Residing on the ridge provides a peaceful view of the valley and Athens Lake from the back patio and deck. Our home graciously accommodates persons with disabilities. Three rooms are available with a variety of amenities including wireless internet access at affordable prices. Children of all ages are welcome
+          </p>
+      </div>
+      <div class="column">
+          <h2> Directions </h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811684.2771767757!2d-81.64698766471987!3d37.37465389599761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884e6e4cf2ea8645%3A0xf62fdb99169a92b9!2sView%20Bed%20%26%20Breakfast%20Inn!5e0!3m2!1sen!2sus!4v1605738274861!5m2!1sen!2sus" width=100% height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+      </div>
+    </div>
+
+    <!--This for adding in a footer-->
+     <div class="footer">
+   	   <div class="footerColumn">
+          <footer>
+   	        <h2> Social Media: </h>
+   	        <ul>
+   	        <a href="https://www.facebook.com/The-View-Bed-and-Breakfast-204491897961"> <img src="images/facebook.png" alt="facebook"> </a>
+   	        </ul>
+   	   </div>
+   	<div class="footerColumn">
+   	<h2> Contact Information: </h2>
+   	<ul> Phone: 1-304-384-9754 </ul>
+   	<ul> Toll Free: 1-866-766-7960 </ul>
+   	<ul> Email: relax@theviewbb.com </ul>
+       </div>
+       </div>
+       </footer>
+     </body>
+   </html>

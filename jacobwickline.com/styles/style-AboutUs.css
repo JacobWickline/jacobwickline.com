@@ -1,0 +1,151 @@
+body{ /*called a selector*/
+   color: #C14242;  /*property, value - this is font color*/
+   background-color: white;
+}
+
+.header h1{
+  background-color: rgb(255, 162, 142);
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Patua One', cursive;
+  /*top right bottom left*/
+  margin: 0px 0px 7px 0px;
+  /*none, hidden, dotted, dashed, solid, double, groove*/
+  border: 75px solid;
+  border-color: rgb(255, 162, 142);
+}
+
+.header img {
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 160px;
+  height: 175px;
+  background: #555;
+}
+
+ul{
+  background-color: rgb(255, 162, 142);
+  list-style-type: none;
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left; /*This puts all the items in the navigation bar to the left*/
+}
+
+li a {
+  display: block; /*This sets the different selections on the navigation bar into blocks*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*This removes the underline for a hyperlink*/
+}
+
+/*This is for when the user is hovering over a selection on the navigation bar*/
+li a:hover {
+  background-color: #BB7A6C;
+}
+
+li a, .dropdown{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdownContent{
+  display: none;
+  background-color: rgb(255, 162, 142);
+  position: absolute;
+}
+
+.dropdownContent a:hover {
+  background-color: #BB7A6C;
+}
+
+.roomDropdown:hover .dropdownContent{
+  display:block;
+}
+
+/*This is for the two columns*/
+.column {
+  box-sizing: border-box;
+  float: left;
+  color: black;
+  background-color: white;
+  font-family: 'Patua One', cursive;
+  width: 100%;
+  padding: 10px;
+  height: 600px;
+}
+
+.column h2{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.column p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.column img{
+  margin-top: 40px;
+  margin-bottom: 30px
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 180px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+/*This is for clearing putting information after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*This is the CSS code for the footer*/
+.footer{
+  background-color: rgb(184,216,190);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Patua One', cursive;
+  margin: 7px 0px 7px 0px;
+
+}
+
+.footerColumn{
+  box-sizing: border-box;
+  float: left;
+  color: white;
+  background-color: rgb(255, 162, 142);
+  font-family: 'Patua One', cursive;
+  position: relative;
+  bottom: 10px;
+  width: 50%;
+  padding: 10px;
+  height: 100px;
+
+}
+
+.footer ul{
+font-size: 15px;
+}
+
+.footer img{
+  width: 35px;
+  margin-top: 5px;
+}
