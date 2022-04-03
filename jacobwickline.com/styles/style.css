@@ -306,7 +306,7 @@ position: relative;
 @media(min-width: 800px){
   .knowledge{
     display: flex;
-    max-width: 1000px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
   }
